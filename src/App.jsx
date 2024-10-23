@@ -8,6 +8,7 @@ function App() {
     return (
       <Card
         key={data.id}
+        id={data.id}
         title={data.title}
         location={data.location}
         googleMapsUrl={data.googleMapsUrl}

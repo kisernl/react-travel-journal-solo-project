@@ -1,4 +1,11 @@
 function Card(props) {
+  let dividerTag;
+  if (props.id !== "1") {
+    dividerTag = <hr className="horizontal-line" />;
+  } else {
+    dividerTag = <></>;
+  }
+
   return (
     <>
       <section className="card">
@@ -23,9 +30,7 @@ function Card(props) {
           </div>
         </div>
       </section>
-      <div className="divider">
-        <hr className="horizontal-line" />
-      </div>
+      <div className="divider">{dividerTag}</div>
     </>
   );
 }
