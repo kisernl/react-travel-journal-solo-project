@@ -1,6 +1,6 @@
 function Card(props) {
   let dividerTag;
-  if (props.id !== "1") {
+  if (props.id !== 1) {
     dividerTag = <hr className="horizontal-line" />;
   } else {
     dividerTag = <></>;
